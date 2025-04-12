@@ -1,4 +1,5 @@
 import React from 'react';
+import { SiBootstrap } from 'react-icons/si';
 import {
   FaPython,
   FaReact,
@@ -10,18 +11,42 @@ import {
   FaCss3Alt,
   FaServer, // Placeholder for REST APIs
   FaBrain,  // Placeholder for Prompt Engineering
+  FaEye,
+  FaMagic,
+  FaChartBar,
+  FaComments,
+  FaFilter,
+  FaCommentDots,
+  FaFigma,
+  FaUniversalAccess,
+  FaMobileAlt,
+  FaFileCode,
+  FaFileExport,
+  FaImage,
+  FaNetworkWired,
+  FaProjectDiagram,    // Placeholder per Agile
+  FaSitemap,           // Placeholder per Scrum
+  FaCogs,              // Placeholder per DevOps
+  FaCode,              // Placeholder per Visual Studio Code
+  FaLaptopCode,        // Placeholder per Eclipse
+  FaJava,
+  FaGamepad,
+  FaGlobeAmericas,
+  FaGlobeEurope,
 } from 'react-icons/fa';
 import {
   SiLangchain,
   SiTensorflow, // Or another relevant AI/ML icon
   SiJavascript,
-  SiTypescript,
   SiMongodb,
   SiTailwindcss,
   SiVite,
   SiHuggingface, // For LLMs/Transformers
-  // SiPytorch, // Add if relevant
-  // SiPostgresql, // Add if relevant
+  SiPytorch, 
+  SiStyledcomponents,
+  SiMaterialdesign,
+  SiMysql,
+  SiPostman,
 } from 'react-icons/si';
 
 // Define skill categories and items
@@ -33,28 +58,97 @@ const skillsData = {
     { name: "NLP", icon: <SiTensorflow /> }, // Using Tensorflow icon as placeholder
     { name: "Prompt Engineering", icon: <FaBrain /> },
     { name: "Hugging Face", icon: <SiHuggingface /> },
+    { name: "PyTorch", icon: <SiPytorch /> },
+    { name: "Reinforcement Learning", icon: <FaBrain /> }, // già coerente
+    { name: "Natural Language Processing", icon: <SiTensorflow /> }, // oppure <FaBrain />
+    { name: "Computer Vision", icon: <FaEye /> }, // visione artificiale
+    { name: "Generative AI", icon: <FaMagic /> }, // crea un effetto "creativo"
+    { name: "Deep Learning", icon: <FaBrain /> }, // già messo
+    { name: "Recommender Systems", icon: <FaChartBar /> }, // rappresentazione dati
+    { name: "Conversational Recommendation Systems", icon: <FaComments /> }, // conversazione + sistemi
+    { name: "Transformers", icon: <SiHuggingface /> }, // modello coerente
+    { name: "Federated Learning", icon: <FaProjectDiagram /> }, // nodi connessi
+    { name: "Data Preprocessing", icon: <FaFilter /> }, // rappresenta il "filtrare" dati
+    { name: "Conversational AI", icon: <FaCommentDots /> }, // dialogo
+    
+
+
+
   ],
   "Web Development": [
     { name: "React", icon: <FaReact /> },
     { name: "Node.js", icon: <FaNodeJs /> },
     { name: "JavaScript", icon: <SiJavascript /> },
-    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "Express.js", icon: <FaServer /> },
     { name: "HTML5", icon: <FaHtml5 /> },
     { name: "CSS3", icon: <FaCss3Alt /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss /> },
     { name: "Vite", icon: <SiVite /> },
     { name: "REST APIs", icon: <FaServer /> },
+    { name: "Bootstrap", icon: <SiBootstrap /> },
+    { name: "Styled Components", icon: <SiStyledcomponents /> },
+    { name: "Material UI", icon: <SiMaterialdesign /> },
+    { name: "Figma", icon: <FaFigma /> },
+    { name: "Web Accessibility", icon: <FaUniversalAccess /> },
+    { name: "Responsive Design", icon: <FaMobileAlt /> },
+    { name: "Single Page Applications (SPAs)", icon: <FaFileCode /> },
+    { name: "Static Site Generation (SSG)", icon: <FaFileExport /> },
+    { name: "Responsive Images", icon: <FaImage /> },
+    { name: "Web APIs", icon: <FaCode /> },
+    { name: "WebSockets", icon: <FaNetworkWired /> },
+    { name: "Version Control (Git)", icon: <FaGitAlt /> },
+
   ],
   "Databases": [
     { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "SQL", icon: <FaDatabase /> },
-    // { name: "PostgreSQL", icon: <SiPostgresql /> },
+    { name: "MongoDB Atlas", icon: <SiMongodb /> },
+    { name: "MySQL", icon: <SiMysql /> },
+    { name: "SQL", icon: <FaDatabase /> }, 
+    { name: "NoSQL", icon: <FaDatabase /> },
+
   ],
   "Tools & Methodologies": [
     { name: "Git", icon: <FaGitAlt /> },
-    { name: "Docker", icon: <FaDocker /> },
-    { name: "Agile", icon: null }, // No specific icon needed
-  ]
+    { name: "Agile", icon: <FaProjectDiagram /> },
+    { name: "Scrum", icon: <FaSitemap /> },
+    { name: "DevOps", icon: <FaCogs /> },
+    { name: "Postman", icon: <SiPostman /> },
+    { name: "Visual Studio Code", icon: <FaCode /> },
+    { name: "Eclipse", icon: <FaLaptopCode /> },
+
+
+  ],
+    "Soft Skills": [
+        { name: "Problem Solving", icon: <FaBrain /> },
+        { name: "Team Collaboration", icon: <FaProjectDiagram /> },
+        { name: "Communication", icon: <FaComments /> },
+        { name: "Adaptability", icon: <FaUniversalAccess /> },
+        { name: "Time Management", icon: <FaChartBar /> },
+        { name: "Critical Thinking", icon: <FaBrain /> },
+        { name: "Creativity", icon: <FaMagic /> },
+    ],
+    "Languages": [
+        { name: "Italian", icon: <FaGlobeEurope />  }, 
+        { name: "English", icon: < FaGlobeAmericas /> }, 
+    ],
+    "Interests": [
+        { name: "AI Ethics", icon: <FaBrain /> },
+        { name: "Open Source Contributions", icon: <FaGitAlt /> },
+        { name: "Tech Blogging", icon: <FaFileCode /> },
+        { name: "Hackathons", icon: <FaProjectDiagram /> },
+        { name: "Gaming", icon: <FaGamepad /> }, // Placeholder for gaming
+    ],
+    "linguaggi di programmazione": [
+        { name: "Python", icon: <FaPython /> },
+        { name: "JavaScript", icon: <SiJavascript /> },
+        { name: "Java", icon: <FaJava /> }, // Placeholder for Java
+        { name: "C#", icon: <FaCode /> }, // Placeholder for C#
+        { name: "HTML", icon: <FaHtml5 /> },
+        { name: "CSS", icon: <FaCss3Alt /> },
+        { name: "SQL", icon: <SiMysql /> },
+        { name: "Assembly", icon: <FaCode /> } // Placeholder for Assembly
+    ],
+
 };
 
 const Skills = () => {

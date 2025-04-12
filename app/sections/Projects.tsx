@@ -9,9 +9,8 @@ import { SiMongodb } from 'react-icons/si'; // Remove SiJava import
 const projectsData = [
   {
     title: "BeFluent",
-    description: "A web application designed to assist individuals with dyslexia by leveraging AI for text adaptation and readability enhancement.",
-    // image: befleuntScreenshot, // Uncomment if you have an image
-    imagePlaceholder: "https://via.placeholder.com/600x400/1a1a1a/ededed?text=BeFluent+App",
+    description: "Web app interattiva per bambini dislessici e gestionale per specialisti. Sviluppata in React + Node.js e supporto conversazionale AI. Utilizza MongoDB per la gestione dei dati.",
+    imagePlaceholder: "BeFluent_logo.png",
     tech: [
       { name: "React", icon: <FaReact /> },
       { name: "Node.js", icon: <FaNodeJs /> },
@@ -23,9 +22,10 @@ const projectsData = [
   },
   {
     title: "POSD System",
-    description: "A system designed for GDPR compliance management, developed using the Model-View-Controller (MVC) architecture and Agile practices.",
-    // image: posdScreenshot, // Uncomment if you have an image
-    imagePlaceholder: "https://via.placeholder.com/600x400/1a1a1a/ededed?text=POSD+System",
+    description: "Soluzione privacy-oriented conforme al GDPR che integra privacy knowledge base, " +
+    "autenticazione sicura e gestione di privacy patterns in architettura MVC. Progettato con metodologie " +
+    "Agile/Scrum per garantire sicurezza e feedback continuo.",
+    imagePlaceholder: "POSD.png",
     tech: [
       { name: "Java", icon: <FaJava /> }, // Use FaJava instead of SiJava
       { name: "MVC Pattern", icon: null },
@@ -42,7 +42,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-16 md:py-24 bg-card text-card-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12 text-primary">Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-primary">Progetti</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {projectsData.map((project, index) => (
             <div
@@ -53,6 +53,7 @@ const Projects = () => {
                  <img
                    src={project.imagePlaceholder} // Consistently use placeholder
                    alt={`${project.title} screenshot`}
+                   style={{ paddingLeft: '130px', width: '600px', height: 'auto' , marginTop: '10px'}}
                    className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
                    loading="lazy"
                  />

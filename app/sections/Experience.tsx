@@ -7,15 +7,15 @@ const Experience = () => {
   // Replace with your actual internship details
   const internship = {
     role: "AI Development Intern",
-    company: "Example Tech Company", // Replace with actual company name
-    duration: "June 2024 - September 2024", // Replace with actual dates
-    description: "Contributed to the development and optimization of a Conversational Recommendation System.",
+    company: " LACAM-SWAP, Università di Bari", // Replace with actual company name
+    duration: "Marzo 2025 - Giugno 2025", // Replace with actual dates
+    description: "Sistema di Raccomandazione Conversazionale Integrato con LLM.",
     details: [
-      "Worked with Large Language Models (LLaMA, Mistral) accessed via Hugging Face.",
-      "Implemented complex agentic flows and chains using the LangChain framework.",
-      "Applied and refined Prompt Engineering techniques to enhance response quality and relevance.",
-      "Achieved a measurable reduction (e.g., ~15%) in model inference latency through optimization.",
-      "Collaborated effectively within an Agile development team, participating in sprints and reviews.",
+      "Prototipazione in Python di modelli LLM locali (LLaMA, Mistral) tramite Hugging Face Transformers.",
+      "Orchestrazione multi-modello con LangChain (LLMChain, ChatOpenAl) e integrazione via OpenRouter API.",
+      "Sperimentazione modelli API (llama-4, mistral) per aumentare la diversità e robustezza delle risposte.",
+      "Ottimizzazione del prompt engineering e implementazione di esecuzione asincrona con caching.",
+      "Risultato: riduzione stimata dei tempi di inferenza del 20-30%.",
     ],
     tech: [
       { name: "Python", icon: <FaPython className="inline mr-1 mb-0.5" /> },

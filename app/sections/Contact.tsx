@@ -3,16 +3,16 @@ import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   // --- IMPORTANT: Replace with your actual email and LinkedIn URL ---
-  const email = "vito.piccolini.vp@gmail.com"; // Replace with your email
-  const linkedinUrl = "https://www.linkedin.com/in/vito-piccolini/"; // Replace with your LinkedIn profile URL
+  const email = "vitopiccolini@live.it"; // Replace with your email
+  const linkedinUrl = "https://www.linkedin.com/in/vito-p-9120028a/"; // Replace with your LinkedIn profile URL
   // ---
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-background text-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-bold mb-6 text-primary">Get In Touch</h2>
+        <h2 className="text-3xl font-bold mb-6 text-primary">Mettiti in Contatto </h2>
         <p className="text-lg mb-10 max-w-2xl mx-auto text-secondary-foreground">
-          I'm actively seeking opportunities in AI and Software Development. Whether you have a question, a project proposal, or just want to connect, feel free to reach out!
+        Sono attivamente alla ricerca di opportunità nell'ambito dell'intelligenza artificiale e dello sviluppo software. Che tu abbia una domanda, una proposta di progetto o semplicemente voglia entrare in contatto con me, non esitare a contattarmi!
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
           <a
